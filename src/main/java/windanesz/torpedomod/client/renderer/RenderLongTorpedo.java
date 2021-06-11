@@ -18,13 +18,20 @@ public class RenderLongTorpedo extends Render<EntityLongTorpedo> {
 	}
 
 	@Override
-	public void doRender(EntityLongTorpedo entity, double par2, double par4, double par6, float par8, float par9) {
-		// item renderer goes here !
+	public void doRender(EntityLongTorpedo entity, double x, double y, double z, float entityYaw, float partialTicks) {
+		GlStateManager.pushMatrix();
+
+		GlStateManager.translate((float) x + 0.5F, (float) y + 0F, (float) z + 0.5F);
+
+		// rendering the OBJ item entity
+		renderItem();
+
+		GlStateManager.popMatrix();
+
 	}
 
 	@Override
 	protected ResourceLocation getEntityTexture(EntityLongTorpedo entity) { return null; }
-
 
 	private void renderItem() {
 
@@ -32,7 +39,8 @@ public class RenderLongTorpedo extends Render<EntityLongTorpedo> {
 		if (!stack.isEmpty()) {
 			GlStateManager.pushMatrix();
 
-			GlStateManager.rotate(180, 0, 180, 180);
+			GlStateManager.rotate(0, 180, 180, 180);
+			GlStateManager.scale(0.6f, 0.6f, 0.6f);
 			//			GlStateManager.scale(0.85F, 0.85F, 0.85F);
 
 			GlStateManager.color(1, 1, 1, 1);

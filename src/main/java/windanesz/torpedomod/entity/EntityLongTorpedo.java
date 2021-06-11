@@ -200,7 +200,8 @@ public class EntityLongTorpedo extends Entity implements IProjectile, IEntityAdd
 	public void onUpdate() {
 
 		super.onUpdate();
-
+		this.motionZ += 0.001f;
+		this.motionX = 0;
 				if (this.getShooter() == null && this.shooterUUID != null) {
 					Entity entity = getEntityByUUID(world, shooterUUID);
 					if (entity instanceof EntityLivingBase) {
