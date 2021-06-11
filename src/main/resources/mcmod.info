@@ -1,0 +1,11 @@
+[{
+    "modid": "torpedomod",
+    "name": "Torpedo Mod",
+    "description": "",
+    "version": "1.0.0",
+    "mcversion": "1.12.2",
+    "url": "",
+    "authorList": ["WinDanesz"],
+    "updateUrl": "",
+    "credits": "WinDanesz"
+}]
