@@ -1,0 +1,15 @@
+#PARSE_ESCAPES
+
+settings.kineticweapons\:settings=Settings
+
+# entities
+entity.kineticweapons\:long_torpedo.name=Long Torpedo
+entity.kineticweapons\:long_torpedo.name_with_owner=%1$s's Long Torpedo
+entity.kineticweapons\:owned_entity.nameplate=%1$s's %2$s
+
+# items
+item.kineticweapons\:long_torpedo.name=Long Torpedo
+item.kineticweapons\:long_torpedo.tooltip=Can be shot from a dispenser
+item.kineticweapons\:long_torpedo.exposion_strength=Explosion Strength: %1$s
+
+

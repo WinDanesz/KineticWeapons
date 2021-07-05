@@ -1,6 +1,6 @@
 [{
-    "modid": "torpedomod",
-    "name": "Torpedo Mod",
+    "modid": "kineticweapons",
+    "name": "Kinetic Weapons",
     "description": "",
     "version": "1.0.0",
     "mcversion": "1.12.2",
